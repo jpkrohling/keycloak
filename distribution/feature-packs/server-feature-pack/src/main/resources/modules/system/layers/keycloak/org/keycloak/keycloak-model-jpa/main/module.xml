@@ -41,6 +41,7 @@
         <module name="com.fasterxml.jackson.core.jackson-annotations"/>
         <module name="com.fasterxml.jackson.core.jackson-databind"/>
         <module name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider"/>
+        <module name="io.opentracing.contrib.jdbc"/>
     </dependencies>
 
 </module>

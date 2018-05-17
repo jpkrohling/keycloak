@@ -122,6 +122,9 @@
         <xml-apis.version>1.4.01</xml-apis.version>
         <subethasmtp.version>3.1.7</subethasmtp.version>
 
+        <!-- Tracing -->
+        <jaeger.version>0.27.0</jaeger.version>
+
         <!-- Maven Plugins -->
         <enforcer.plugin.version>1.4</enforcer.plugin.version>
         <replacer.plugin.version>1.3.5</replacer.plugin.version>
@@ -701,6 +704,13 @@
                 <groupId>org.jboss.aesh</groupId>
                 <artifactId>aesh</artifactId>
                 <version>${aesh.version}</version>
+            </dependency>
+
+            <!-- Tracing -->
+            <dependency>
+                <groupId>io.jaegertracing</groupId>
+                <artifactId>jaeger-tracerresolver</artifactId>
+                <version>${jaeger.version}</version>
             </dependency>
 
             <!-- keycloak -->

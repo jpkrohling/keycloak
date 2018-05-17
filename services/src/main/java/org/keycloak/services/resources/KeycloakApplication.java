@@ -19,6 +19,8 @@ package org.keycloak.services.resources;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.opentracing.contrib.jaxrs2.server.ServerTracingDynamicFeature;
+import io.opentracing.util.GlobalTracer;
 import org.jboss.dmr.ModelNode;
 import org.jboss.logging.Logger;
 import org.jboss.resteasy.core.Dispatcher;
@@ -123,6 +125,7 @@ public class KeycloakApplication extends Application {
             singletons.add(new RobotsResource());
             singletons.add(new RealmsResource());
             singletons.add(new AdminRoot());
+            singletons.add(new ServerTracingDynamicFeature());
             classes.add(ThemeResource.class);
             classes.add(JsResource.class);
 
